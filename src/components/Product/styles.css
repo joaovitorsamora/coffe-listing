@@ -1,0 +1,159 @@
+.App-product-image-container {
+    position: relative;
+    display: flex;
+    flex-basis: calc(33.33% - 28px);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+.App-product-image {
+    display: flex;
+    width: 76%;
+    height: 150px;
+    border-radius: 14px;
+  }
+  
+.App-product-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 76%;
+    margin-bottom: -8%;
+  
+  }
+  
+.App-product-name {
+    color: #FEF7EE;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+.App-product-price {
+    background-color: #BEE3CC;
+    color: #111315;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+.App-rating {
+    display: flex;
+    justify-content: flex-start;
+    width: 76%;
+    align-items: center;
+    gap: 5px;
+  }
+  
+.App-rating-image {
+    display: flex;
+    width: 10%;
+    height: 25px;
+  }
+  
+.App-rating-text {
+    color: #FEF7EE;
+    font-family: "DM Sans", sans-serif;
+  }
+  
+.App-rating-votes {
+    color: #6F757C;
+    font-family: "DM Sans", sans-serif;
+  }
+
+.App-available {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+.App-rating-available {
+    color: #ED735D;
+    font-family: "DM Sans", sans-serif;
+  }
+
+.App-product-popular {
+    position: absolute;
+    background-color: #F6C768;
+    color: #111315;
+    top: 0;
+    left: 9%;
+    font-size: 0.695rem;
+    font-weight: 900;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 2560px) {
+    .App-product-name-container{
+      margin-bottom: -2%;
+      width: 63%;
+    }
+    .App-rating {
+      width: 67%; 
+    }
+
+    .App-product-image {
+      width: 64%;
+    }
+
+    .App-available {
+        width: 59%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .App-product-name-container{
+      margin-bottom: -5%;
+      width: 86%;
+    }
+    .App-product-image{
+        width: 87%;
+    }
+
+    .App-available {
+        width: 46%;
+    }
+
+    .App-rating {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .App-product-image-container {
+      flex-basis: calc(50% - 14px); 
+    }
+  
+    .App-product-name-container {
+      margin-bottom: -5%;
+    }
+  
+    .App-rating-image {
+      width: 5%;
+      height: 20px;
+  }
+
+  .App-available {
+    width: 47%;
+  }
+
+}
+  
+  
+@media (max-width: 480px) {  
+    .App-product-image-container {
+      flex-basis: 100%; 
+    }
+
+    .App-available {
+        width: 60%;
+    }
+}
